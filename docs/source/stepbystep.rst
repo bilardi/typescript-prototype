@@ -121,4 +121,41 @@ When you have modified the configuration files, you can commit your changes
     $ git add *json
     $ git commit -m "step 2 - update configuration files"
 
+Step 3
+******
+
+Before write code, it is important to verbalize the concepts by documentation:
+so the documentation is important to learn a package as to plan how to write the code.
+
+You can write your documentation as you want: you can create docs folder like in this package, by `sphinx <https://simple-sample.readthedocs.io/en/latest/howtomake.html#documentation>`_.
+
+You can also write an example of code that it uses your future package, that you will use for testing each your new release.
+
+When you have created your documentation, you can add the new folder and you can commit your changes
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ git add docs example
+    $ git commit -m "step 3 - add documentation by sphinx and example"
+
+When a commit completes one feature or a set of fixies, you can tag that commit as a release.
+The standard behaviour is to add changes in a CHANGELOG file: see the changes of **CHANGELOG.md** by `GitHub <https://github.com/bilardi/typescript-prototype/commit/0a6442f798934183b36167246eef5d103194b432>`_ or by command line with see-git-steps
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ see-git-steps -c 0a6442f798934183b36167246eef5d103194b432 -v | head -n 34 | tail -n 17 # for CHANGELOG.md details
+
+So you can add CHANGELOG.md on your last commit, or you can create one commit for changelog, and then you can add the tag.
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ git add CHANGELOG.md
+    $ git commit --amend # add file on your last commit
+    $ git tag v0.0.1 -m "Empty package and documentation by sphinx" # create a tag with that version name
+    $ git tag -n # show the tag list with description
+    $ git push origin --tags # load the tag on repository
+
 to be continued ..
