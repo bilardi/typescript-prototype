@@ -158,4 +158,29 @@ So you can add CHANGELOG.md on your last commit, or you can create one commit fo
     $ git tag -n # show the tag list with description
     $ git push origin --tags # load the tag on repository
 
+Step 4
+******
+
+Before write code, it is important to verbalize the methods by create Test Driven Development (TDD) for your code.
+Then, it is important to use unit test for finding the issues and before to update change log file and package version.
+
+In TypeScript, there are many TDD frameworks: in this repo is used `Jest <https://jestjs.io/>`_.
+
+Natively, Typescript does not allow to instantiate an abstract class or an interface.
+
+So the tests are only on the final public functions: see the unit tests by `GitHub <https://github.com/bilardi/python-prototype/commit/4bf512b2f38372cd2eb97b7006131dfb5dd62f98>`_ or by command line with see-git-steps
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ see-git-steps -c 4bf512b2f38372cd2eb97b7006131dfb5dd62f98 -v
+
+When you have created **tests/myClass.test.ts**, you can commit your changes
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ git add tests/myClass.test.ts
+    $ git commit -m "step 4 - add the unit test"
+
 to be continued ..
