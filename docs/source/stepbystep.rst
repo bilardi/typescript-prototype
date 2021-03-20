@@ -168,7 +168,7 @@ In TypeScript, there are many TDD frameworks: in this repo is used `Jest <https:
 
 Natively, Typescript does not allow to instantiate an abstract class or an interface.
 
-So the tests are only on the final public functions: see the unit tests by `GitHub <https://github.com/bilardi/python-prototype/commit/4bf512b2f38372cd2eb97b7006131dfb5dd62f98>`_ or by command line with see-git-steps
+So the tests are only on the final public functions: see the unit tests by `GitHub <https://github.com/bilardi/typescript-prototype/commit/4bf512b2f38372cd2eb97b7006131dfb5dd62f98>`_ or by command line with see-git-steps
 
 .. code-block:: bash
 
@@ -186,7 +186,7 @@ When you have created **tests/myClass.test.ts**, you can commit your changes
 Step 5
 ******
 
-Now you can write your first code: see myClassAbstract by `GitHub <https://github.com/bilardi/python-prototype/commit/48a7b214cff13cd179dbdfa404895dc96521acfb>`_ or by command line with see-git-steps
+Now you can write your first code: see myClassAbstract by `GitHub <https://github.com/bilardi/typescript-prototype/commit/48a7b214cff13cd179dbdfa404895dc96521acfb>`_ or by command line with see-git-steps
 
 .. code-block:: bash
 
@@ -206,7 +206,7 @@ When you have created src/myClassAbstract.ts, you can commit your changes
 Step 6
 ******
 
-Now you can write your second code: see myInterface by `GitHub <https://github.com/bilardi/python-prototype/commit/f4c3acf94b79d4939436204cf30d5c116d98c553>`_ or by command line with see-git-steps
+Now you can write your second code: see myInterface by `GitHub <https://github.com/bilardi/typescript-prototype/commit/f4c3acf94b79d4939436204cf30d5c116d98c553>`_ or by command line with see-git-steps
 
 .. code-block:: bash
 
@@ -222,5 +222,25 @@ When you have created src/myInterface.ts, you can commit your changes
     $ cd typescript-prototype
     $ git add src/myInterface.ts
     $ git commit -m "step 6 - add myInterface"
+
+Step 7
+******
+
+Now you can write your third code: see myType by `GitHub <https://github.com/bilardi/typescript-prototype/commit/ac1ae35f85bba8cab099dae166b8b4f772fa9a01>`_ or by command line with see-git-steps
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ see-git-steps -c ac1ae35f85bba8cab099dae166b8b4f772fa9a01 -v
+
+A functional test for a type is to use it, so you can test directly on myClass.
+
+When you have created src/myType.ts, you can commit your changes
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ git add src/myType.ts
+    $ git commit -m "step 6 - add myType"
 
 to be continued ..
