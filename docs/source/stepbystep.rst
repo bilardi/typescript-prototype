@@ -203,4 +203,24 @@ When you have created src/myClassAbstract.ts, you can commit your changes
     $ git add src/myClassAbstract.ts
     $ git commit -m "step 5 - add myClassAbstract"
 
+Step 6
+******
+
+Now you can write your second code: see myInterface by `GitHub <https://github.com/bilardi/python-prototype/commit/f4c3acf94b79d4939436204cf30d5c116d98c553>`_ or by command line with see-git-steps
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ see-git-steps -c f4c3acf94b79d4939436204cf30d5c116d98c553 -v
+
+An interface can only be extended, so you cannot test directly.
+
+When you have created src/myInterface.ts, you can commit your changes
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ git add src/myInterface.ts
+    $ git commit -m "step 6 - add myInterface"
+
 to be continued ..
