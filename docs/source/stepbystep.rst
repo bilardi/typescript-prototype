@@ -241,6 +241,53 @@ When you have created src/myType.ts, you can commit your changes
 
     $ cd typescript-prototype
     $ git add src/myType.ts
-    $ git commit -m "step 6 - add myType"
+    $ git commit -m "step 7 - add myType"
+
+Step 8
+******
+
+After verbalizing all functions by the unit tests, after to write myClassAbstract, myInterface and myType,
+you are ready to write myClass and the index: see new files by `GitHub <https://github.com/bilardi/typescript-prototype/commit/fce06f494a319e2a282d282e1c5905941db61505>`_ or by command line with see-git-steps
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ see-git-steps -c fce06f494a319e2a282d282e1c5905941db61505 -v
+
+When you have created new files, you can run all unit tests
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ npm run test
+
+    > simple-sample@0.0.1 test
+    > jest
+
+    PASS  tests/myClass.test.ts
+    Simple tests
+        ✓ Passes when MyClass can be instantiated (3 ms)
+    Functional tests
+        ✓ Passes when baz returns a boolean
+        ✓ Passes when foo returns the reverse value of its input (1 ms)
+        ✓ Passes when getBar returns the value of bar
+        ✓ Passes when fooBar returns the reverse value of bar (1 ms)
+        ✓ Passes when fooQuux returns the reverse value of qux
+        ✓ Passes when getGrault returns the value of corge (2 ms)
+        ✓ Passes when fooGrault returns the reverse value of corge (1 ms)
+
+    Test Suites: 1 passed, 1 total
+    Tests:       8 passed, 8 total
+    Snapshots:   0 total
+    Time:        1.708 s
+    Ran all test suites.
+
+If all test is OK, you can add the new file and you can commit your changes
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ git add src/myType.ts
+    $ git commit -m "step 8 - add index, myClass and unit tests works properly"
 
 to be continued ..
