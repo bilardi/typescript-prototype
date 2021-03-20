@@ -183,4 +183,24 @@ When you have created **tests/myClass.test.ts**, you can commit your changes
     $ git add tests/myClass.test.ts
     $ git commit -m "step 4 - add the unit test"
 
+Step 5
+******
+
+Now you can write your first code: see myClassAbstract by `GitHub <https://github.com/bilardi/python-prototype/commit/48a7b214cff13cd179dbdfa404895dc96521acfb>`_ or by command line with see-git-steps
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ see-git-steps -c 48a7b214cff13cd179dbdfa404895dc96521acfb -v
+
+A class abstract cannot be instantiated, so you cannot test directly.
+
+When you have created src/myClassAbstract.ts, you can commit your changes
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ git add src/myClassAbstract.ts
+    $ git commit -m "step 5 - add myClassAbstract"
+
 to be continued ..
