@@ -290,4 +290,43 @@ If all test is OK, you can add the new file and you can commit your changes
     $ git add src/myType.ts
     $ git commit -m "step 8 - add index, myClass and unit tests works properly"
 
-to be continued ..
+Step 9
+******
+
+You are completed the package, so you can tag that commit as a release.
+This step could be run every time you complete a class with its unit test.
+The files that you have to update are **CHANGELOG.md**, **docs/source/conf.py**, **package.json** and **package-lock.json**, because they contain version number.
+See the changes by `GitHub <https://github.com/bilardi/typescript-prototype/commit/1a2933a6351d04fc20935e471a95d1d8ea27a695>`_ or by command line with see-git-steps
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ see-git-steps -c 1a2933a6351d04fc20935e471a95d1d8ea27a695 -v
+
+The files named package.json and package-lock.json have 3 points where update them, you can use a command of npm
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ npm version --no-git-tag-version minor
+
+So you can add the files updated, you can create a commit dedicated, and then you can add the tag.
+
+.. code-block:: bash
+
+    $ cd typescript-prototype
+    $ git add CHANGELOG.md docs/source/conf.py package.json package-lock.json
+    $ git commit -m "step 9 - update changelog and version of the simple-sample package"
+    $ git push origin master # load the commit on remote repository
+    $ git tag v0.1.0 -m "The first full version of the simple-sample package" # create a tag with that version name
+    $ git tag -n # show the tag list with description
+    $ git push origin --tags # load the tag on repository
+
+Step 10
+*******
+
+If you want to publish the package on npm, you have to
+
+* remove the line ``"private": true,`` on **package.json**
+* run all steps locally (see paragraph **Packaging** in the section named :ref:`How to make <How to make>`)
+* decide if you want to publish a beta version or stable
