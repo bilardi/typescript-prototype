@@ -1,7 +1,7 @@
 {
   "name": "simple-sample",
   "private": true,
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A simple sample of a TypeScript package prototype",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -69,7 +69,9 @@
   "eslintConfig": {
     "root": true,
     "parser": "@typescript-eslint/parser",
-    "plugins": ["@typescript-eslint"],
+    "plugins": [
+      "@typescript-eslint"
+    ],
     "env": {
       "es6": true,
       "node": true,
@@ -90,10 +92,19 @@
       "quotes": [
         "error",
         "double",
-        { "allowTemplateLiterals": true }
+        {
+          "allowTemplateLiterals": true
+        }
       ],
-      "keyword-spacing": ["error", { "before": true }],
-      "space-before-blocks": ["error"]
+      "keyword-spacing": [
+        "error",
+        {
+          "before": true
+        }
+      ],
+      "space-before-blocks": [
+        "error"
+      ]
     }
   }
 }
