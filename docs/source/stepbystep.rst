@@ -282,7 +282,7 @@ When you have created new files, you can run all unit tests
     Time:        1.708 s
     Ran all test suites.
 
-If all test is OK, you can add the new file and you can commit your changes
+If all test is **passed**, you can add the new file and you can commit your changes
 
 .. code-block:: bash
 
