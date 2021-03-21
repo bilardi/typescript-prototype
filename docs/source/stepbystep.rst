@@ -296,12 +296,12 @@ Step 9
 You are completed the package, so you can tag that commit as a release.
 This step could be run every time you complete a class with its unit test.
 The files that you have to update are **CHANGELOG.md**, **docs/source/conf.py**, **package.json** and **package-lock.json**, because they contain version number.
-See the changes by `GitHub <https://github.com/bilardi/typescript-prototype/commit/1a2933a6351d04fc20935e471a95d1d8ea27a695>`_ or by command line with see-git-steps
+See the changes by `GitHub <https://github.com/bilardi/typescript-prototype/commit/08aca6d33ff2e6046823711155a38ed59aaf7894>`_ or by command line with see-git-steps
 
 .. code-block:: bash
 
     $ cd typescript-prototype
-    $ see-git-steps -c 1a2933a6351d04fc20935e471a95d1d8ea27a695 -v
+    $ see-git-steps -c 08aca6d33ff2e6046823711155a38ed59aaf7894 -v
 
 The files named package.json and package-lock.json have 3 points where update them, you can use a command of npm
 
