@@ -108,7 +108,7 @@ See the changes these configuration files by `GitHub <https://github.com/bilardi
 
 .. code-block:: bash
 
-    $ cd python-prototype
+    $ cd typescript-prototype
     $ see-git-steps -c f7c3e395376537c9abf1cd2cf778bce5d4de7854 -v
 
 The file **package-lock.json** is automatically generated.
